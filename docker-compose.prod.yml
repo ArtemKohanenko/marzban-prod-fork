@@ -1,0 +1,8 @@
+services:
+  marzban-prod:
+    image: gozargah/marzban:latest
+    restart: always
+    env_file: .env.prod
+    network_mode: host
+    volumes:
+      - /var/lib/marzban:/var/lib/marzban
